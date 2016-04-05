@@ -1,11 +1,10 @@
-#echoperm [![Build Status](https://travis-ci.org/xyproto/echoperm.svg?branch=master)](https://travis-ci.org/xyproto/echoperm) [![GoDoc](https://godoc.org/github.com/xyproto/echoperm?status.svg)](http://godoc.org/github.com/xyproto/echoperm) [![Report Card](https://img.shields.io/badge/go_report-A+-brightgreen.svg?style=flat)](http://goreportcard.com/report/xyproto/echoperm)
-
+#echoperm [![Build Status](https://travis-ci.org/xyproto/echoperm.svg?branch=master)](https://travis-ci.org/xyproto/echoperm) [![GoDoc](https://godoc.org/github.com/xyproto/echoperm?status.svg)](http://godoc.org/github.com/xyproto/echoperm)
 
 
 Middleware for [echo](https://github.com/labstack/echo) for handling users and permissions. Requires a Redis server.
 
-* Look into [permissionbolt](https://github.com/xyproto/permissionbolt) for an alternative that stores the information in a database file instead.
 * Look into [permissions2](https://github.com/xyproto/permissions2) for more configuration options and documentation for the userstate struct.
+* Look into [permissionbolt](https://github.com/xyproto/permissionbolt) for an alternative that stores the information in a database file instead.
 
 ### Usage
 
@@ -60,9 +59,6 @@ func req(c echo.Context) *http.Request {
 
 func main() {
 	e := echo.New()
-
-	// Blank slate, no default permissions
-	//perm.Clear()
 
 	// Logging middleware
 	e.Use(middleware.Logger())
@@ -147,7 +143,8 @@ func main() {
 Online API Documentation
 ------------------------
 
-[godoc.org](http://godoc.org/github.com/xyproto/echoperm)
+* [echoperm](http://godoc.org/github.com/xyproto/echoperm)
+* [permissions2](http://godoc.org/github.com/xyproto/permissions2)
 
 
 General information
