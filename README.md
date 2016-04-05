@@ -1,4 +1,4 @@
-#echoperm [![Build Status](https://travis-ci.org/xyproto/echoperm.svg?branch=master)](https://travis-ci.org/xyproto/echoperm) [![Build Status](https://drone.io/github.com/xyproto/echoperm/status.png)](https://drone.io/github.com/xyproto/echoperm/latest) [![GoDoc](https://godoc.org/github.com/xyproto/echoperm?status.svg)](http://godoc.org/github.com/xyproto/echoperm) [![Report Card](https://img.shields.io/badge/go_report-A+-brightgreen.svg?style=flat)](http://goreportcard.com/report/xyproto/echoperm)
+#echoperm [![Build Status](https://travis-ci.org/xyproto/echoperm.svg?branch=master)](https://travis-ci.org/xyproto/echoperm) [![GoDoc](https://godoc.org/github.com/xyproto/echoperm?status.svg)](http://godoc.org/github.com/xyproto/echoperm) [![Report Card](https://img.shields.io/badge/go_report-A+-brightgreen.svg?style=flat)](http://goreportcard.com/report/xyproto/echoperm)
 
 
 
