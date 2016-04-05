@@ -33,11 +33,11 @@ func main() {
 	e.Use(middleware.Logger())
 
 	// Enable the permissions middleware, must come before recovery
-	permissionsMiddleware, userstate, err := echoperm.Middleware("localhost", "", "Permission denied!")
+	middleware, userstate, err := echoperm.Middleware("localhost", "", "Permission denied!")
 	if err != nil {
 		log.Fatal(err)
 	}
-	e.Use(permissionsMiddleware)
+	e.Use(middleware)
 
 	// Recovery middleware
 	e.Use(middleware.Recover())
@@ -105,5 +105,5 @@ func main() {
 	}))
 
 	// Serve
-	e.Run(standard.New(":4000"))
+	e.Run(standard.New(":3000"))
 }
