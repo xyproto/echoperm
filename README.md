@@ -1,10 +1,14 @@
-# echoperm
+#echoperm [![Build Status](https://travis-ci.org/xyproto/echoperm.svg?branch=master)](https://travis-ci.org/xyproto/echoperm) [![Build Status](https://drone.io/github.com/xyproto/echoperm/status.png)](https://drone.io/github.com/xyproto/echoperm/latest) [![GoDoc](https://godoc.org/github.com/xyproto/echoperm?status.svg)](http://godoc.org/github.com/xyproto/echoperm) [![Report Card](https://img.shields.io/badge/go_report-A+-brightgreen.svg?style=flat)](http://goreportcard.com/report/xyproto/echoperm)
 
-Middleware for [echo](https://github.com/labstack/echo) for handling users and permissions. Requires a Redis server. Look into [permissionbolt](https://github.com/xyproto/permissionbolt) for an alternative that stores the information to a database file instead.
+
+
+Middleware for [echo](https://github.com/labstack/echo) for handling users and permissions. Requires a Redis server.
+
+* Look into [permissionbolt](https://github.com/xyproto/permissionbolt) for an alternative that stores the information in a database file instead.
 
 ### Usage
 
-Pseudocode:
+*Pseudocode*:
 
 ~~~go
 e := echo.New()
@@ -148,7 +152,7 @@ Online API Documentation
 General information
 -------------------
 
-* Version: 2.0
+* Version: 1.0
 * License: MIT
 * Alexander F Rødseth
 
