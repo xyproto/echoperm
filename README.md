@@ -5,6 +5,7 @@
 Middleware for [echo](https://github.com/labstack/echo) for handling users and permissions. Requires a Redis server.
 
 * Look into [permissionbolt](https://github.com/xyproto/permissionbolt) for an alternative that stores the information in a database file instead.
+* Look into [permissions2](https://github.com/xyproto/permissions2) for more configuration options.
 
 ### Usage
 
