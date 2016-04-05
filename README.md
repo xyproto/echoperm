@@ -15,12 +15,12 @@ e := echo.New()
 
 redisHost := "localhost"
 redisPassword := "hunter1"
-permissionMsg := "Permission denied!"
-middleware, userstate, err := echoperm.Middleware(redisHost, redisPassword, permissionMsg)
+permissionDenied := "Permission denied!"
+epm, userstate, err := echoperm.Middleware(redisHost, redisPassword, permissionDenied)
 if err != nil {
     ...
 }
-e.Use(middleware)
+e.Use(epm)
 
 e.Get("/", echo.HandlerFunc(func(c echo.Context) error {
     // Do things with userstate
@@ -67,11 +67,11 @@ func main() {
 	e.Use(middleware.Logger())
 
 	// Enable the permissions middleware, must come before recovery
-	middleware, userstate, err := echoperm.Middleware("localhost", "", "Permission denied!")
+	epm, userstate, err := echoperm.Middleware("localhost", "", "Permission denied!")
 	if err != nil {
 		log.Fatal(err)
 	}
-	e.Use(middleware)
+	e.Use(epm)
 
 	// Recovery middleware
 	e.Use(middleware.Recover())
