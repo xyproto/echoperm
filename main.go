@@ -9,7 +9,10 @@ import (
 	"github.com/xyproto/pinterface"
 )
 
-// Set up a middleware handler for Echo
+// Middleware sets up a middleware handler for Echo.
+//
+// Requires a Redis hostname (can be "localhost"), a Redis password (can be
+// blank) and a custom message for when permissions are denied.
 func Middleware(redisHostname, redisPassword, denyMessage string) (echo.MiddlewareFunc, pinterface.IUserState, error) {
 	userstate, err := permissions.NewUserStateWithPassword2(redisHostname, redisPassword)
 	if err != nil {
