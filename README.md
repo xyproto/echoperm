@@ -6,6 +6,8 @@ Middleware for [echo](https://github.com/labstack/echo) for handling users and p
 * Look into [permissions2](https://github.com/xyproto/permissions2) for more configuration options and documentation for the userstate struct.
 * Look into [permissionbolt](https://github.com/xyproto/permissionbolt) for an alternative that stores the information in a database file instead.
 
+`echoperm` requires Go 1.7 or later.
+
 ### Usage
 
 *Pseudocode*:
