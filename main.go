@@ -4,7 +4,6 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo"
-	"github.com/labstack/echo/engine/standard"
 	"github.com/xyproto/permissions2"
 	"github.com/xyproto/pinterface"
 )
@@ -23,7 +22,7 @@ func Middleware(redisHostname, redisPassword, denyMessage string) (echo.Middlewa
 	return echo.MiddlewareFunc(func(next echo.HandlerFunc) echo.HandlerFunc {
 		return echo.HandlerFunc(func(c echo.Context) error {
 			// Check if the user has the right admin/user rights
-			if perm.Rejected(c.Response().(*standard.Response).ResponseWriter, c.Request().(*standard.Request).Request) {
+			if perm.Rejected(c.Response(), c.Request()) {
 				// Deny the request
 				return echo.NewHTTPError(http.StatusForbidden, denyMessage)
 			}
