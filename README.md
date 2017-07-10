@@ -1,12 +1,10 @@
 # echoperm [![Build Status](https://travis-ci.org/xyproto/echoperm.svg?branch=master)](https://travis-ci.org/xyproto/echoperm) [![GoDoc](https://godoc.org/github.com/xyproto/echoperm?status.svg)](http://godoc.org/github.com/xyproto/echoperm)
 
 
-Middleware for [echo](https://github.com/labstack/echo) for handling users and permissions. Requires a Redis server.
+Middleware for [echo](https://github.com/labstack/echo) for handling users and permissions. Requires a Redis server and Go >= 1.7.
 
 * Look into [permissions2](https://github.com/xyproto/permissions2) for more configuration options and documentation for the userstate struct.
 * Look into [permissionbolt](https://github.com/xyproto/permissionbolt) for an alternative that stores the information in a database file instead.
-
-`echoperm` requires Go 1.7 or later.
 
 ### Usage
 
@@ -146,5 +144,5 @@ General information
 
 * Version: 2.0
 * License: MIT
-* Alexander F Rødseth &<ltxyproto@archlinux.org&gt;
+* Alexander F Rødseth &lt;xyproto@archlinux.org&gt;
 
