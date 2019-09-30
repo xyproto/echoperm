@@ -1,7 +1,6 @@
-# echoperm [![Build Status](https://travis-ci.org/xyproto/echoperm.svg?branch=master)](https://travis-ci.org/xyproto/echoperm) [![GoDoc](https://godoc.org/github.com/xyproto/echoperm?status.svg)](http://godoc.org/github.com/xyproto/echoperm)
+# echoperm [![Build Status](https://travis-ci.org/xyproto/echoperm.svg?branch=master)](https://travis-ci.org/xyproto/echoperm) [![GoDoc](https://godoc.org/github.com/xyproto/echoperm?status.svg)](http://godoc.org/github.com/xyproto/echoperm) [![Go Report Card](https://goreportcard.com/badge/github.com/xyproto/echoperm)](https://goreportcard.com/report/github.com/xyproto/echoperm)
 
-
-Middleware for [echo](https://github.com/labstack/echo) for handling users and permissions. Requires a Redis server and Go >= 1.7.
+Middleware for [echo](https://github.com/labstack/echo) for handling users and permissions. Requires a Redis server and Go >= 1.11.
 
 * Look into [permissions2](https://github.com/xyproto/permissions2) for more configuration options and documentation for the userstate struct.
 * Look into [permissionbolt](https://github.com/xyproto/permissionbolt) for an alternative that stores the information in a database file instead.
@@ -41,8 +40,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/labstack/echo"
-	"github.com/labstack/echo/middleware"
+	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 	"github.com/xyproto/echoperm"
 )
 
