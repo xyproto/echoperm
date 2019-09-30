@@ -3,7 +3,7 @@ package echoperm
 import (
 	"net/http"
 
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 	"github.com/xyproto/permissions2"
 	"github.com/xyproto/pinterface"
 )

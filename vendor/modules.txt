@@ -1,0 +1,45 @@
+# github.com/dgrijalva/jwt-go v3.2.0+incompatible
+github.com/dgrijalva/jwt-go
+# github.com/gomodule/redigo v2.0.0+incompatible
+github.com/gomodule/redigo/internal
+github.com/gomodule/redigo/redis
+# github.com/labstack/echo/v4 v4.1.10
+github.com/labstack/echo/v4
+github.com/labstack/echo/v4/middleware
+# github.com/labstack/gommon v0.3.0
+github.com/labstack/gommon/bytes
+github.com/labstack/gommon/color
+github.com/labstack/gommon/log
+github.com/labstack/gommon/random
+# github.com/mattn/go-colorable v0.1.2
+github.com/mattn/go-colorable
+# github.com/mattn/go-isatty v0.0.9
+github.com/mattn/go-isatty
+# github.com/valyala/bytebufferpool v1.0.0
+github.com/valyala/bytebufferpool
+# github.com/valyala/fasttemplate v1.0.1
+github.com/valyala/fasttemplate
+# github.com/xyproto/cookie v0.0.0-20181220103240-f4de411f45ff
+github.com/xyproto/cookie
+# github.com/xyproto/permissions2 v0.0.0-20190729074010-6510c7590749
+github.com/xyproto/permissions2
+# github.com/xyproto/pinterface v0.0.0-20181004125811-9710ef24b684
+github.com/xyproto/pinterface
+# github.com/xyproto/randomstring v0.0.0-20181222003104-0f764aabc45a
+github.com/xyproto/randomstring
+# github.com/xyproto/simpleredis v0.0.0-20190919091103-4dd4111d2407
+github.com/xyproto/simpleredis
+# golang.org/x/crypto v0.0.0-20190927123631-a832865fa7ad
+golang.org/x/crypto/acme
+golang.org/x/crypto/acme/autocert
+golang.org/x/crypto/bcrypt
+golang.org/x/crypto/blowfish
+# golang.org/x/net v0.0.0-20190926025831-c00fd9afed17
+golang.org/x/net/idna
+# golang.org/x/sys v0.0.0-20190927073244-c990c680b611
+golang.org/x/sys/unix
+# golang.org/x/text v0.3.2
+golang.org/x/text/secure/bidirule
+golang.org/x/text/transform
+golang.org/x/text/unicode/bidi
+golang.org/x/text/unicode/norm
